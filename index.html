@@ -51,15 +51,15 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+                <h1 class="text-primary fw-bold m-0">DortexAi</h1>
+            </a>
             <div class="navbar-nav ms-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
                 <a href="#skill" class="nav-item nav-link">Skills</a>
                 <a href="#service" class="nav-item nav-link">Services</a>
             </div>
-            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
-                <h1 class="text-primary fw-bold m-0">DortexAi</h1>
-            </a>
             <div class="navbar-nav me-auto py-0">
                 <a href="#project" class="nav-item nav-link">Projects</a>
                 <a href="#team" class="nav-item nav-link">Team</a>
@@ -233,14 +233,14 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
-                        <li class="nav-item w-50">
+                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5 flex-row flex-nowrap">
+                        <li class="nav-item">
                             <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">IT Solution</button>
                         </li>
-                        <li class="nav-item w-50">
+                        <li class="nav-item">
                             <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Recruitment Services</button>
                         </li>
-                        <li class="nav-item w-50">
+                        <li class="nav-item">
                             <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-3">Event Organizations</button>
                         </li>
                     </ul>
@@ -322,7 +322,7 @@
                                     <h6 class="mb-0">Cambridge University</h6>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>Apps Design222/h5>
+                                    <h5>Apps Design</h5>
                                     <hr class="text-primary my-2">
                                     <p class="text-primary mb-1">2000 - 2045</p>
                                     <h6 class="mb-0">Cambridge University</h6>
@@ -630,29 +630,29 @@
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                    <form>
+                    <form id="contact-form">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
                                     <label for="subject">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px" required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
