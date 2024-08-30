@@ -124,3 +124,19 @@
     
 })(jQuery);
 
+
+const form = document.getElementById('contact-form');
+
+function sendEmail(event) {
+    event.preventDefault();
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+    
+    alert('Name: ' + name + '\nEmail: ' + email + '\nSubject: ' + subject + '\nMessage: ' + message);
+    // Sent mail
+    
+    form.reset();
+}
+form.addEventListener('submit', sendEmail);
