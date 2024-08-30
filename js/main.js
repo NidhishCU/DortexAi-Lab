@@ -136,7 +136,21 @@ function sendEmail(event) {
     
     alert('Name: ' + name + '\nEmail: ' + email + '\nSubject: ' + subject + '\nMessage: ' + message);
     // Sent mail
-    
+    fetch('https://dortexaiserver.onrender.com/send-email', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({name, email, subject, message}),
+    }).then(response => {
+        if (response.ok) {
+            alert('Email sent successfully');
+        } else {
+            alert(`Email not sent: ${response.statusText}`);
+        }
+    }).catch(error => {
+        alert(`Error: ${error}`);
+    });
     form.reset();
 }
 form.addEventListener('submit', sendEmail);
