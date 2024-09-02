@@ -1,3 +1,4 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 /********** Template CSS **********/
 :root {
     --primary: #011255;
@@ -106,7 +107,6 @@
 /*** Header ***/
 #home {
     margin-bottom: 10rem;
-    /* background: url(../img/logos/logo2.1_transparent2.png) left top no-repeat; */
 }
 
 .typed-cursor {
@@ -220,6 +220,11 @@
 
 
 /*** Skills ***/
+#home, #skill, #contact, #project {
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("/img/cool-wave.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 #skill .progress {
     height: 5px;
     border-radius: 5px;
