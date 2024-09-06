@@ -25,10 +25,6 @@
     padding-bottom: 6rem;
 }
 
-.stickybackground {
-    background: url(../img/bg-header.png) left top no-repeat;
-    
-}
 
 /*** Spinner ***/
 #spinner {
